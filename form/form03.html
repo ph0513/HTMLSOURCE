@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="">date</form>
+      <input type="date" name="" id="" />
+    </div>
+    <div>
+      <form action="">datetime</form>
+      <input type="datetime" name="" id="" />
+    </div>
+    <div>
+      <form action="">datetime-local</form>
+      <input type="datetime-local" name="" id="" />
+    </div>
+    <div>
+      <form action="">time</form>
+      <input type="time" name="" id="" />
+    </div>
+    <div>
+      <form action="">month</form>
+      <input type="month" name="" id="" />
+    </div>
+    <div>
+      <form action="">week</form>
+      <input type="week" name="" id="" />
+    </div>
+    <div>
+      <!-- type : submit, reset, button
+            submit : 폼을 서버 쪾으로 무조건 보냄
+            reset : 현재 폼을 초기화
+            button : button 모양으로 보여주기(기능이 없어서 기능 하려면 click=>스크립트필요)-->
+      <!-- 버튼의 방식 -->
+      <form action="">date</form>
+      <button type="submit">전송</button>
+      <input type="button" name="" id="" value="button" />
+      <input type="button" value="button" onclick="submit1()" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </div>
+    <div>
+      <label for="">comment</label>
+      <!-- value 속성을 이용하지 않음 -->
+      <textarea name="" id="" cols="30" rows="10">텍스트를 입력하시오</textarea>
+    </div>
+    <button type="submit">전송</button>
+    <script>
+      function submit1() {
+        alert("페이지 이동");
+      }
+    </script>
+  </body>
+</html>

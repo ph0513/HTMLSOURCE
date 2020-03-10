@@ -1,0 +1,12 @@
+td {
+  border: 1px solid red;
+  text-align: center;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse; /* 테이블 병합 */
+}
+th {
+  border: 1px solid red;
+}

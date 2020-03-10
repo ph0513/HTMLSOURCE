@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- input : 사용자에게 입력받을 데이터 양식
+            autocomplete, autofocus : 커서 깜빡임(하나 지정)
+            step="2" 2씩 증가 감소 max="10" min="1" number 만 의미가 있음
+            maxlength="10" minlength="4" text
+            required 유효성 검사 경고 표시
+            placeholder 힌트 value 가 들어가면 의미 없어짐
+            value 기본값
+            readonly 수정불가 읽기전용
+            name(가장 중요) on,off 개념
+            checkbox 선택
+            radio 필수 선택 체크박스가 1개일시 한번 클릭후 해제 불가
+            novalidate 사용자 입력값에 대한 유효성 검증 처음으로 데이터를 막는다
+        -->
+    <form action="">
+      <!-- novalidate -->
+      <input
+        type="text"
+        autofocus
+        maxlength="10"
+        minlength="4"
+        required
+        placeholder="이름입력"
+        value="홍길동"
+        readonly
+      />
+      <!-- checked 체크 되있다 -->
+      <input type="number" max="10" min="1" value="5" step="2" />
+      <input type="checkbox" name="fruits" id="" />
+      <label for="">사과</label>
+      <input type="checkbox" name="fruits" id="" checked />
+      <label for="">바나나</label>
+      <input type="checkbox" name="fruits" id="" />
+      <label for="">수박</label>
+      <input type="radio" name="gender" id="" checked />
+      <label for="">남</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">여</label>
+      <div>
+        <label for="email">이메일</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+        /><!-- 유효성 검증은 12@123 밖에 안된다 -->
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label
+        ><!-- 라벨 for 는 비밀번호 누르면 비밀번호 커서로 넘어감 id를 맞춘다 -->
+        <input type="password" name="pwd" id="pwd" required />
+      </div>
+      <div>
+        <label for="">숨겨진 값</label>
+        <input type="hidden" name="num" value="10" />
+        <!-- 화면엔 보이지 않지만 서버에 보내고 싶은 값을 보낼수있다 중요하지 않은값 다보임 -->
+      </div>
+      <div>
+        <label for="color">색상</label>
+        <input type="color" name="" id="color" />
+      </div>
+      <div>
+        <label for="tel">전화번호</label>
+        <input
+          type="tel"
+          name=""
+          id="tel"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+        />
+      </div>
+      <div>
+        <label for="url">url</label>
+        <input type="url" name="" id="url" required />
+      </div>
+      <div>
+        <label for="range">range</label>
+        <input type="range" name="" id="range" min="1" max="10" step="2" />
+      </div>
+      <div>
+        <label for="search">search</label>
+        <input type="search" name="" id="search" />
+      </div>
+      <button type="submit">전송</button>
+    </form>
+  </body>
+</html>
